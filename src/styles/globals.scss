@@ -210,3 +210,59 @@ h6 {
     }
   }
 }
+
+// Hourly Weather Style
+
+.hourly {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  overflow: auto;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__box-wrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:first-child {
+      min-width: 110px;
+      padding-left: 0;
+    }
+
+    &:last-child {
+      min-width: 110px;
+      padding-right: 0;
+    }
+  }
+
+  &__box {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: $secondary;
+    color: #fff;
+
+    img {
+      width: 100%;
+      max-width: 100px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__time {
+    font-size: 1rem;
+    font-weight: $f-light;
+
+    &--now {
+      font-weight: $f-semi-bold;
+    }
+  }
+}
