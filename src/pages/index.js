@@ -14,9 +14,20 @@ export default function Home() {
       </Head>
       <div className="home home-title">
         <h1>Weather App - Accesa Internship</h1>
+        <h1>Raul Macavei</h1>
         <div className="container">
           <SearchBox placeholder="Search for a city..." />
           <FavoritePlaces />
+        </div>
+        <div className="github-btn">
+          <button>
+            <a
+              href="https://github.com/RaulMacavei/Weather-app-accesa"
+              target="_blank"
+            >
+              Github Repository
+            </a>
+          </button>
         </div>
       </div>
     </div>
