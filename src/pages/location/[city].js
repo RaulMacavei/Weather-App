@@ -4,6 +4,9 @@ import Head from "next/head";
 import moment from "moment-timezone";
 import TodaysWeather from "../../../components/TodaysWeather";
 import HourlyWeather from "../../../components/HourlyWeather";
+import DailyWeather from "../../../components/DailyWeather";
+import SearchBox from "../../../components/SearchBox";
+import Link from "next/link";
 
 export async function getServerSideProps(context) {
   const city = getCity(context.params.city);
@@ -81,12 +84,17 @@ export default function City({
 
       <div className="page-wrapper">
         <div className="container">
+          <Link href="/" legacyBehavior>
+            <a className="back-link">&larr; Home</a>
+          </Link>
+          <SearchBox placeholder="Search for another location..." />
           <TodaysWeather
             city={city}
             weather={dailyWeather[0]}
             timezone={timezone}
           />
           <HourlyWeather hourlyWeather={hourlyWeather} timezone={timezone} />
+          <DailyWeather dailyWeather={dailyWeather} timezone={timezone} />
         </div>
       </div>
     </div>

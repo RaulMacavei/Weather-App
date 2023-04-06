@@ -11,7 +11,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="home">
+      <div className="home home-title">
+        <h1>Weather App - Accesa Internship</h1>
         <div className="container">
           <SearchBox placeholder="Search for a city..." />
         </div>
