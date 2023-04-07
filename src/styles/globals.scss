@@ -26,7 +26,6 @@ body {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 6rem;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
@@ -48,6 +47,10 @@ body {
 
 .home-title h1 {
   color: #4361ee;
+}
+
+.home-title h1:nth-child(3) {
+  padding-bottom: 5rem;
 }
 
 // Search Box Style
@@ -399,7 +402,13 @@ h6 {
   }
 }
 
-#nprogress {
+@media only screen and (max-width: 600px) {
+  .daily__sun-times {
+    display: none;
+  }
+}
+
+.daily__sun-times #nprogress {
   pointer-events: none;
 }
 
@@ -534,6 +543,13 @@ h6 {
     img {
       transition: all 0.3s ease;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .places__box {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 

@@ -13,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="home home-title">
-        <h1>Weather App - Accesa Internship</h1>
+        <h1>Weather App</h1>
+        <h1>Accesa Internship</h1>
         <h1>Raul Macavei</h1>
         <div className="container">
           <SearchBox placeholder="Search for a city..." />
