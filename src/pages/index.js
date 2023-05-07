@@ -1,6 +1,5 @@
 import Head from "next/head";
 import SearchBox from "../../components/SearchBox";
-import Image from "next/image";
 import FavoritePlaces from "../../components/FavoritePlaces";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       </Head>
       <div className="home home-title">
         <h1>Weather App</h1>
-        <h1>Accesa Internship</h1>
         <h1>Raul Macavei</h1>
         <div className="container">
           <SearchBox placeholder="Search for a city..." />
